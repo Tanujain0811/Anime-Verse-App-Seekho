@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:title="Anime Details"
+        app:titleTextColor="@android:color/black"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_24" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Video or Poster Section -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- VideoView for Trailer -->
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+
+                <!-- Poster (if trailer is unavailable) -->
+                <ImageView
+                    android:id="@+id/imageViewPosterDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/textViewDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anime Title"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Genres -->
+            <TextView
+                android:id="@+id/textViewGenres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genres: Action, Adventure, Fantasy"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Rating -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/textViewRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8.5"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <!-- Synopsis -->
+            <TextView
+                android:id="@+id/textViewSynopsisLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Synopsis"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewSynopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a brief description or synopsis of the anime."
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Episodes -->
+            <TextView
+                android:id="@+id/textViewEpisodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Episodes: 24"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</layout>
