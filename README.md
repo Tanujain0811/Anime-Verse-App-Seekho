@@ -58,6 +58,11 @@ Steps:
 4.Sync the Gradle files to download dependencies.
 5.Build and run the app on an emulator or physical device.
 
+**Known Issues and Limitations**
+
+Offline Mode:
+The app does not support offline mode as it relies on real-time API calls.
+
 **Future Enhancements**
 
 1.Implement search functionality to find specific anime.
