@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+
+    <!-- Outer TV Frame -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M12,16 L84,16 C88.4183,16 92,19.5817 92,24 L92,72 C92,76.4183 88.4183,80 84,80 L12,80 C7.5817,80 4,76.4183 4,72 L4,24 C4,19.5817 7.5817,16 12,16 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#F4511E"
+        android:strokeLineJoin="round" />
+
+    <!-- Play Button -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M40,36 L64,48 L40,60 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#E65100"
+        android:strokeLineJoin="round" />
+
+    <!-- Decorative Stars -->
+    <!-- Top Left Star -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M18,20 L20,25 L25,25 L21,28 L22,33 L18,30 L14,33 L15,28 L11,25 L16,25 Z" />
+
+    <!-- Bottom Right Star -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M74,66 L76,71 L81,71 L77,74 L78,79 L74,76 L70,79 L71,74 L67,71 L72,71 Z" />
+
+    <!-- TV Antenna -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M40,10 L36,4 L52,4 L48,10"
+        android:strokeWidth="2"
+        android:strokeColor="#FF3D00"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round" />
+
+    <!-- Legs of the TV -->
+    <path
+        android:fillColor="#FF6F00"
+        android:pathData="M24,80 L28,86 L32,80 M64,80 L68,86 L72,80" />
+</vector>
